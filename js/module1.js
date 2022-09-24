@@ -313,16 +313,12 @@
 // введе число більше 100, або натисне кнопку
 // Скасування в prompt
 
-
-
 // const validNumber = 100;
 // let userNumber;
 // do {
 //  userNumber = prompt('enter number', 5);
 // } while (userNumber < validNumber);
 // console.log(userNumber)
-
-
 
 //   Моя ЗАДАЧА
 // У змінній min лежить число від 0 до 59.
@@ -341,7 +337,6 @@
 //     console.log('fourth')
 // } else console.log('uncknow')
 
-
 // Перепишіть конструкцію if за допомогою умовного оператора '?':
 
 // const a = 1;
@@ -353,7 +348,6 @@
 // } else {
 //   result = 'Much';
 // }
-
 
 // const a = 1;
 // const b = 2;
@@ -379,38 +373,32 @@
 // Java Джеймс Гослінг
 // Python Гвідо ван Россум
 
+// const language = "JS"
+// switch (language.toLowerCase()) {
+//     case 'php':
+//         console.log("PHP Расмус Лердорф")
+//         break;
+// } case 'php';
+// console.log("C# група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота")
+// break;
 
-const language = "JS"
-switch (language.toLowerCase()) {
-    case 'php':
-        console.log("PHP Расмус Лердорф")
-        break;
-} case 'php';
-console.log("C# група інженерів компанії Microsoft під керівництвом Андерса Хейлсберга та Скотта Вільтаумота")
-break;
+// case 'php';
+//         console.log("Swift Кріс Латтнер")
+//         break;
 
-case 'php';
-        console.log("Swift Кріс Латтнер")
-        break;
+//         case 'php';
+//         console.log("JS Брендан Ейх")
+//         break;
+//         case 'php';
+//             console.log("Java Джеймс Гослінг")
+//             break;
+//             case 'php';
+//                 console.log("Python Гвідо ван Россум")
+//                 break;
 
-        case 'php';
-        console.log("JS Брендан Ейх")
-        break;
-        case 'php';
-            console.log("Java Джеймс Гослінг")
-            break;
-            case 'php';
-                console.log("Python Гвідо ван Россум")
-                break;
-                  
-                default: console.log("error")
+//                 default : console.log("error")
 
-
-
-
-
-
-                // Натуральне число більше 1 називається простим, якщо воно ні на що не ділиться, крім себе і 1.
+// Натуральне число більше 1 називається простим, якщо воно ні на що не ділиться, крім себе і 1.
 //
 // Інакше кажучи, n > 1 – просте, якщо його розподілі на будь-яке число крім 1 і є залишок.
 //
@@ -421,3 +409,57 @@ case 'php';
 //   Для n = 10 результат має бути 2,3,5,7.
 //
 // P.S. Код також має бути легко модифікований для будь-яких інших інтервалів.
+
+// область видимости конспект
+
+// const globalValue = 10;
+// console.log(globalValue);
+
+// function foo(){
+// console.log(globalValue);
+// };
+
+// for (let i = 0; i < 5; i += 1) {
+//   console.log(globalValue);
+
+//   if (i === 2) {
+//     console.log(globalValue);
+//   }
+// }
+
+// блочная область видимости
+// for (let i = 0; i < 5; i += 1) {
+//   const a = 20;
+//   console.log(a); // 20
+
+//   if (i === 2) {
+//     const b = 30;
+//     console.log(a); // 20
+//     console.log(b); // 30
+//   }
+
+//   if (i === 3) {
+//     console.log(a); // 20
+
+//     // ❌ Ошибка! Переменная b не доступна в этой области видимости
+//     console.log(b);
+//   }
+// }
+
+function makeTask(data) {
+  const completed = false;
+  const category = 'General';
+  const priority = 'Normal';
+  // Change code below this line
+  const task = { priority, category, completed };
+  const task1 = {
+    completed: {},
+    category: 'General',
+    priority: 'Normal',
+    text: {},
+  };
+  return task;
+
+  console.log(data);
+  // Change code above this line
+}
