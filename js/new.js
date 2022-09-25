@@ -459,3 +459,96 @@
 // }
 // console.log(getCommonElements(numbers));
 // ************************************************************************
+// ****************************************************************Blanded JS 24.09.2022 10.00**********************************
+// const url =
+//   'https://www.npmjs.com/?query=axios&version=0.3&module=render&size=32&date=12212183311';
+
+// // console.log(window.location);
+// console.log(url);
+// const link = new URL(url);
+// console.log(link);
+// const search = link.search.slice(1);
+// console.log(search);
+// const arrQuery = search.split('&');
+// console.log(arrQuery);
+// const objQuery = arrQuery.reduce((obj, item) => {
+//   const [key, value] = item.split('=');
+//   //   console.log(values);
+//   obj[key] = value;
+//   console.log(obj);
+//   return obj;
+// }, {});
+// console.log(objQuery);
+// *****************************************************************************************
+// Напишіть метод, який очищає масив від усіх непотрібних елементів, таких як false, undefined, порожні рядки, нуль, null
+
+// const data = [0, 1, false, 2, undefined, '', 3, null];
+// console.log(compact(data)) // [1, 2, 3]
+// **********************************************************************************
+// Напишіть функцію, яка рахує кількість входжень значення в масив
+// let arr = [2,4,3,1,2,1];
+// Очікуваний результат: (arr, 1) => 2
+// let arr = [2, 4, 3, 1, 2, 1];
+// const checkIncome = function (arr, number) {
+//   return arr.filter(el => el === number).length;
+// };
+// console.log(checkIncome(arr, 1));
+// ******************************************************************************
+// Сортувати у порядку за зменшенням
+//
+// let arr = [5, 2, 1, -10, 8];
+//
+// // ... ваш код для сортування за спаданням
+//
+// alert(arr); // 8, 5, 2, 1, -10
+// let arr = [5, 2, 1, -10, 8];
+// function sortBy(arr)
+// return [...arr].sort()
+// sortBy(sortBy(arr));
+// дописати
+
+// *************************************************
+// Напишіть функцію sortByAge(users), яка приймає масив об'єктів із властивістю age та сортує їх за ним.
+// Наприклад:
+//
+// let bruce = { name: 'Bruce', age: 25 };
+// let jhon = { name: 'Jhon', age: 30 };
+// let maria = { name: 'Maria', age: 28 };
+
+// let arr = [bruce, jhon, maria];
+
+// function sortByAge(arr) {
+//   return arr.sort((a, b) => a.age - b.age);
+// }
+// sortByAge(arr);
+// console.log(arr);
+//**************8 */
+// // тепер: [bruce, maria, jhon]
+// alert(arr[0].name); // Bruce
+// alert(arr[1].name); // Maria
+// alert(arr[2].name); // Jhon
+// *********************************************************************************
+// Розробники люблять скорочувати все:
+//   k8s означає Kubernetes, a11y означає accessibility, l10n означає localization.
+//   Ви отримуєте нумероніми Dev, беручи першу та останню букви та підраховуючи кількість букв між ними.
+//   Слова, що містять менше 4 літер, не скорочуються, тому що це було б просто дивно.
+//   Змінна input  є реченням, і ви повинні скорочувати кожне слово довжиною 4 літери або більше.
+//   У реченні не буде розділових знаків. g2d l2k e6e
+
+// const input = 'Every developer likes to mix kubernetes and javascript';
+// Result
+// 'E3y d7r l3s to mix k8s and j8t'
+// function shortString(input) {
+//   return input
+//     .split(' ')
+//     .map(word => {
+//       if (word.length > 4) {
+//         return `${word[0]}${word.length - 2}${word[word.length - 1]}`;
+//       } else {
+//         return word;
+//       }
+//     })
+//     .join(' ');
+// }
+// console.log(shortString(input));
+// *******************************************************************************
